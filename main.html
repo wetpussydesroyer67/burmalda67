@@ -527,7 +527,9 @@
                 total += item.price * item.qty;
                 html += `
                     <div class="cart-item">
-                        <div class="cart-item-img placeholder">[фото]</div>
+                        <div class="cart-item-img">
+    <img src="${item.image}" alt="${item.name}">
+</div>
                         <div class="cart-item-info">
                             <div class="cart-item-name">${item.name}</div>
                             <div class="cart-item-size">Размер: ${item.size}</div>
